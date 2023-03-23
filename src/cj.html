@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    
+    <style>
+        #u_skip {
+            position: relative;
+            z-index: 3000;
+        }
+
+        #u_skip a {
+            position: absolute;
+            top: -60px;
+            left: 0;
+            width: 138px;
+            background: #333;
+            text-align: center;
+        }
+
+        #u_skip a:focus {
+            top: 0px;
+            border: 2px solid #4ec53d;
+        }
+
+        #u_skip span {
+            display: inline-block;
+            padding: 2px 6px 0 0;
+            font-size: 13px;
+            line-height: 26px;
+            color: #fff;
+            letter-spacing: -1px;
+            white-space: nowrap;
+        }   
+
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@400;500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        @font-face {
+        font-family: 'NIXGONM-Vb';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+
+        body {
+            font-family: 'Merriweather Sans', 'NIXGONM-Vb', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="sr-only">CJ푸드빌 리디자인</h1>
+    <div id="u_skip">
+        <a href="#visual">
+            <span>visual 바로가기</span>
+        </a> 
+    </div>
+    
+    <div class="container lg:p-20 space-y-8">
+        <div class="flex-wrap lg:flex ">
+            <div class="lg:w-1/4 pt-5 pl-4">
+                <img src="images/logo_cjfood.png" alt="cj푸드빌 로고" class="w-32 lg:w-48">
+            </div>
+        </div>
+
+        <div class="lg:flex">
+            <div id="visual" class="flex-col lg:hidden">
+                <div class="flex">
+                    <div class="flex-1/3 relative">
+                        <img src="images/visual1.png ">
+                        <div class="absolute left-10 top-40 text-[#fff] ">
+                            <h2 class="text-7xl font-bold mb-14">Happy<br>Place for<br>Everyone</h2>
+                            <p class="text-2xl">모두에게 행복한 장소가 되는 곳</p>
+                        </div>
+                    </div>
+                    <div class="flex-1/3 hidden lg:block"><img src="images/visual2.png"></div>
+                    <div class="flex-1/3 hidden lg:block"><img src="images/visual3.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="text-5xl hidden lg:block"> 화면 너비를 최소 크기로 줄여주세요.</p>
+            <p class="text-5xl lg:hidden"> 작업중입니다 :D </p>
+        </div>
+            
+    </div>
+    
+</body>
+</html>
